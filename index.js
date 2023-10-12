@@ -23,11 +23,9 @@ btn.addEventListener("click", fetchData);
 // Call the fetchData function once to initially populate the quote element with a random quote
 fetchData();
 // Print the specific quotes generated
-// function printCurrentPage() {
-//     window.print();
-// }
-
-
+function printCurrentPage() {
+    window.print();
+}
 
 // Selecting necessary DOM elements
 const captchaTextBox = document.querySelector(".captch_box input"); // Input field where the generated captcha will be displayed
