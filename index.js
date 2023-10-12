@@ -88,11 +88,6 @@ submitButton.addEventListener("click", submitBtnClick);
 // Generate a captcha when the page loads
 generateCaptcha();
 
-
-
-
-
-
 document.addEventListener('DOMContentLoaded', function () {
   // ... existing JavaScript ...
 

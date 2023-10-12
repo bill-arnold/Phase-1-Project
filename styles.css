@@ -182,8 +182,6 @@ p{
   font-style: italic;
 }
 
-/* ... existing CSS ... */
-
 .overlay {
   display: flex;
   flex-direction: column;
@@ -202,6 +200,5 @@ p{
 }
 
 .quote-generator {
-  /* Changes start here */
   display: none; /* Initially hide the quote generator */
 }
