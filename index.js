@@ -22,9 +22,10 @@ btn.addEventListener("click", fetchData);
 
 // Call the fetchData function once to initially populate the quote element with a random quote
 fetchData();
-function printCurrentPage() {
-    window.print();
-}
+// Print the specific quotes generated
+// function printCurrentPage() {
+//     window.print();
+// }
 
 
 
