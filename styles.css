@@ -17,7 +17,6 @@ body {
 }
 .container2 {
   margin-top: 20px;
-  margin-top: 20px;
   background-color: #b7f5eb;
   border-radius: 10px;
   padding: 50px 20px;
@@ -74,6 +73,7 @@ footer.container {
     text-align: center;
     padding: 10px 0;
     flex: 1
+   
 }
 
 /* Import Google font - Montserrat*/
@@ -177,3 +177,34 @@ h1{
   font-style: italic;
   text-shadow:0 8px 25px rgba(0, 0, 0, 0.4);;
 }
+p{
+  margin-top: 50px;
+  font-style: italic;
+}
+
+/* ... existing CSS ... */
+
+.overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:url("generator\ pic.jpeg");
+   
+   /* opacity rgba(128, 0, 128, 0.7); Purple color */ */
+  color: white;
+  z-index: 999;
+}
+
+.quote-generator {
+  /* Changes start here */
+  display: none; /* Initially hide the quote generator */
+  /* Changes end here */
+}
+
+/* ... existing CSS ... */

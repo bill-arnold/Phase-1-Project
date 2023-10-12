@@ -87,3 +87,27 @@ submitButton.addEventListener("click", submitBtnClick);
 
 // Generate a captcha when the page loads
 generateCaptcha();
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  // ... existing JavaScript ...
+
+  // Show the overlay on page load
+  const overlay = document.getElementById('overlay');
+  overlay.style.display = 'flex';
+
+  // You can use this function to show the quote generator when the captcha is correct
+  window.showQuoteGenerator = function () {
+      overlay.style.display = 'none';
+      const quoteGenerator = document.getElementById('quote-generator');
+      quoteGenerator.style.display = 'block';
+  };
+
+  // ... existing JavaScript ...
+});
+
+// ... existing JavaScript ...
