@@ -80,7 +80,7 @@ const submitBtnClick = () => {
   }
 };
 
-// Add event listeners for the refresh button, captchaInputBox, submit button
+// event listeners for the refresh button, captchaInputBox, submit button
 refreshButton.addEventListener("click", refreshBtnClick);
 captchaInputBox.addEventListener("keyup", captchaKeyUpValidate);
 submitButton.addEventListener("click", submitBtnClick);
@@ -89,20 +89,16 @@ submitButton.addEventListener("click", submitBtnClick);
 generateCaptcha();
 
 document.addEventListener('DOMContentLoaded', function () {
-  // ... existing JavaScript ...
+  
 
   // Show the overlay on page load
   const overlay = document.getElementById('overlay');
   overlay.style.display = 'flex';
 
-  // You can use this function to show the quote generator when the captcha is correct
+  //  function to show the quote generator when the captcha is correct
   window.showQuoteGenerator = function () {
       overlay.style.display = 'none';
       const quoteGenerator = document.getElementById('quote-generator');
       quoteGenerator.style.display = 'block';
   };
-
-  // ... existing JavaScript ...
 });
-
-// ... existing JavaScript ...
