@@ -195,10 +195,24 @@ p{
   background-image:url("generator\ pic.jpeg");
   color: white;
   z-index: 999;
-
-  
+ 
 }
 
 .quote-generator {
   display: none; /* Initially hide the quote generator */
+}
+
+body { 
+   min-height: 120vh; /*Set a minimum height to ensure scroll bars */
+   overflow-y: auto; /*Enable vertical scrolling */
+ }
+ .reaction-buttons {
+  text-align: center; /* Center the buttons */
+}
+
+.reaction-button {
+  font-size: 24px; /* Increase the font size */
+  margin: 10px; /* Add margin for spacing between buttons */
+  border-radius: 8px;
+  border-color: #b7f5eb;
 }

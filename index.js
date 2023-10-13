@@ -102,3 +102,28 @@ document.addEventListener('DOMContentLoaded', function () {
       quoteGenerator.style.display = 'block';
   };
 });
+
+// Initialize counters for each emoji reaction
+let happyCount = 0;
+let thumbsUpCount = 0;
+let celebrationCount = 0;
+
+function react(emoji) {
+    // Update the counter based on the selected emoji
+    switch (emoji) {
+        case '😊':
+            happyCount++;
+            document.getElementById('happy-count').innerText = happyCount;
+            break;
+        case '👍':
+            thumbsUpCount++;
+            document.getElementById('thumbs-up-count').innerText = thumbsUpCount;
+            break;
+        case '🎉':
+            celebrationCount++;
+            document.getElementById('celebration-count').innerText = celebrationCount;
+            break;
+        default:
+            break;
+    }
+}

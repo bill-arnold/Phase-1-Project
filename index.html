@@ -9,7 +9,7 @@
 <body>
 <h2>Inspirations Quote Generator</h2>
     <div id="overlay" class="overlay">
-        <h1 style="color: #000002;">Inspirations Quote Generator</h1>
+        <h1 style="color: #000002;">Inspiration Quote Generator</h1>
         <div class="container1">
             <header>Captcha Generator</header>
             <div class="input_field captch_box">
@@ -34,8 +34,13 @@
             <div id="quote" class="quote">loading.....</div>
             <button id="getbtn" class="btn" onclick="generateQuote()">Get Another Quote</button>
         </div>
+        <div class="reaction-buttons">
+            <button class="reaction-button" onclick="react('😊')">😊 <span id="happy-count">0</span></button>
+            <button class="reaction-button" onclick="react('👍')">👍 <span id="thumbs-up-count">0</span></button>
+            <button class="reaction-button" onclick="react('🎉')">🎉 <span id="celebration-count">0</span></button>
+        </div>
         <div>
-          <button style="background-color: #800080; color: white; font-size: 18px;margin-top: 40px;" onclick="printCurrentPage()">Print quotes</button>
+          <button style="background-color: #800080; color: white; font-size: 18px;margin-top: 40px; border-radius: 8px;" onclick="printCurrentPage()">Print quotes</button>
 
       </div>
         <div>
