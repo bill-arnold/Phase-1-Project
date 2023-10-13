@@ -109,7 +109,7 @@ let thumbsUpCount = 0;
 let celebrationCount = 0;
 
 function react(emoji) {
-    // Update the counter based on the selected emoji
+    // Update the respective counter based on the selected emoji
     switch (emoji) {
         case '😊':
             happyCount++;
@@ -124,6 +124,10 @@ function react(emoji) {
             document.getElementById('celebration-count').innerText = celebrationCount;
             break;
         default:
+            // Handle other emoji reactions if needed
             break;
     }
+
+    // Add your custom logic here based on the selected emoji
+    // For example, you might want to update a database, store user reactions, etc.
 }
